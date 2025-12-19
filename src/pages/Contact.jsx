@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Contact: React.FC = () => {
+const Contact= () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -9,14 +9,14 @@ const Contact: React.FC = () => {
     message: ''
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission
     console.log('Form submitted:', formData);
@@ -32,10 +32,10 @@ const Contact: React.FC = () => {
 
   const contactInfo = {
     address: 'Sri Venkateswara Swamy Temple, Thiruvannamalai, Tamil Nadu 606601',
-    phone: '+91-XXXX-XXXXXX',
+    phone: '+91-74187 03824',
     email: 'info@ttd-thiruvannamalai.org',
-    website: 'www.ttd-thiruvannamalai.org',
-    emergency: '+91-XXXX-XXXXXX'
+    // website: 'www.ttd-thiruvannamalai.org',
+    // emergency: '+91-74187 03824'
   };
 
   const officeTimings = [
@@ -97,7 +97,7 @@ const Contact: React.FC = () => {
                 <h5>Phone</h5>
                 <p className="text-muted">
                   Office: {contactInfo.phone}<br />
-                  Emergency: {contactInfo.emergency}
+                  {/* Emergency: {contactInfo.emergency} */}
                 </p>
               </div>
             </div>
@@ -108,7 +108,7 @@ const Contact: React.FC = () => {
                 <h5>Email</h5>
                 <p className="text-muted">
                   General: {contactInfo.email}<br />
-                  Website: {contactInfo.website}
+                  {/* Website: {contactInfo.website} */}
                 </p>
               </div>
             </div>

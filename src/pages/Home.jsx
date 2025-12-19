@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Home: React.FC = () => {
+const Home = () => {
   return (
     <div className="home-page">
       {/* Hero Section */}
@@ -9,7 +9,7 @@ const Home: React.FC = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="hero-content fade-in">
-                <h1 className="hero-title">Welcome to Sri Venkateswara Swamy Temple</h1>
+                <h1 className="hero-title">Welcome to Sri valli sidhar peedam Thiruvannamalai Sri Venkateswara Temple</h1>
                 <p className="hero-subtitle">Thiruvannamalai - The Abode of Divine Grace</p>
                 <div className="hero-buttons">
                   <button className="btn btn-ttd btn-lg me-3">

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Footer: React.FC = () => {
+const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
@@ -22,9 +22,9 @@ const Footer: React.FC = () => {
 
   const contactInfo = {
     address: 'Sri Venkateswara Swamy Temple, Thiruvannamalai, Tamil Nadu 606601',
-    phone: '+91-XXXX-XXXXXX',
-    email: 'info@ttd-thiruvannamalai.org',
-    website: 'www.ttd-thiruvannamalai.org'
+    phone: '+91-74187 03824',
+    // email: 'info@ttd-thiruvannamalai.org',
+    // website: 'www.ttd-thiruvannamalai.org'
   };
 
   return (
@@ -95,14 +95,14 @@ const Footer: React.FC = () => {
                 <i className="bi bi-telephone me-2 text-warning"></i>
                 <span>{contactInfo.phone}</span>
               </li>
-              <li className="mb-2">
+              {/* <li className="mb-2">
                 <i className="bi bi-envelope me-2 text-warning"></i>
                 <span>{contactInfo.email}</span>
               </li>
               <li className="mb-2">
                 <i className="bi bi-globe me-2 text-warning"></i>
                 <span>{contactInfo.website}</span>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

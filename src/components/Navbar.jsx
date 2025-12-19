@@ -59,10 +59,10 @@ const Navbar = () => {
             <div className="col-md-9">
               <div className="text-center text-md-end">
                 <h1 className="h4 mb-1 text-white">
-                  Tirumala Tirupati Devasthanams
+                 Sri valli sidhar peedam Thiruvannamalai Sri Venkateswara Temple
                 </h1>
                 <p className="mb-0 text-warning">
-                  Sri Venkateswara Swamy Temple
+                  ஶ்ரீ வள்ளி சித்தர் பீடம் திருவண்ணாமலை ஶ்ரீ வெங்கடேஸ்வரா திரு கோவில்
                 </p>
                 <p className="mb-0 small text-light">Thiruvannamalai</p>
               </div>
