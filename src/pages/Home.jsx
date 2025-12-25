@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Home = () => {
   return (
@@ -9,13 +9,21 @@ const Home = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="hero-content fade-in">
-                <h1 className="hero-title">Welcome to Sri valli sidhar peedam Thiruvannamalai Sri Venkateswara Temple</h1>
-                <p className="hero-subtitle">Thiruvannamalai - The Abode of Divine Grace</p>
+                <h1 className="hero-title">
+                  Welcome to Sri valli sidhar peedam
+                </h1>
+                <p className="hero-subtitle">
+                  Thiruvannamalai - The Abode of Divine Grace
+                </p>
                 <div className="hero-buttons">
-                  <button className="btn btn-ttd btn-lg me-3">
-                    <i className="bi bi-calendar-check me-2"></i>
-                    Book Darshan
+                  <button
+                    className="btn btn-ttd btn-lg me-3"
+                    onClick={() => (window.location.href = "/donate")} // Donation page link
+                  >
+                    <i className="bi bi-wallet2 me-2"></i>
+                    Donate Now
                   </button>
+
                   <button className="btn btn-ttd-outline btn-lg">
                     <i className="bi bi-play-circle me-2"></i>
                     Virtual Tour
@@ -66,52 +74,72 @@ const Home = () => {
             <div className="col-lg-12">
               <div className="text-center mb-5">
                 <h2 className="section-title">Our Services</h2>
-                <p className="text-muted">Experience divine bliss through our various services</p>
+                <p className="text-muted">
+                  Experience divine bliss through our various services
+                </p>
               </div>
             </div>
           </div>
-          
+
           <div className="row g-4">
             <div className="col-lg-3 col-md-6">
               <div className="card ttd-card h-100">
                 <div className="card-body text-center">
                   <i className="bi bi-stars service-icon"></i>
                   <h5 className="card-title">Arjitha Sevas</h5>
-                  <p className="card-text">Special paid sevas for devotees seeking closer divine experience</p>
-                  <a href="/services" className="btn btn-ttd btn-sm">Learn More</a>
+                  <p className="card-text">
+                    Special paid sevas for devotees seeking closer divine
+                    experience
+                  </p>
+                  <a href="/services" className="btn btn-ttd btn-sm">
+                    Learn More
+                  </a>
                 </div>
               </div>
             </div>
-            
+
             <div className="col-lg-3 col-md-6">
               <div className="card ttd-card h-100">
                 <div className="card-body text-center">
                   <i className="bi bi-eye service-icon"></i>
                   <h5 className="card-title">Special Darshan</h5>
-                  <p className="card-text">Quick darshan facilities for elderly, disabled, and special needs</p>
-                  <a href="/services" className="btn btn-ttd btn-sm">Learn More</a>
+                  <p className="card-text">
+                    Quick darshan facilities for elderly, disabled, and special
+                    needs
+                  </p>
+                  <a href="/services" className="btn btn-ttd btn-sm">
+                    Learn More
+                  </a>
                 </div>
               </div>
             </div>
-            
+
             <div className="col-lg-3 col-md-6">
               <div className="card ttd-card h-100">
                 <div className="card-body text-center">
                   <i className="bi bi-house-heart service-icon"></i>
                   <h5 className="card-title">Accommodation</h5>
-                  <p className="card-text">Comfortable and affordable staying facilities for pilgrims</p>
-                  <a href="/services" className="btn btn-ttd btn-sm">Learn More</a>
+                  <p className="card-text">
+                    Comfortable and affordable staying facilities for pilgrims
+                  </p>
+                  <a href="/services" className="btn btn-ttd btn-sm">
+                    Learn More
+                  </a>
                 </div>
               </div>
             </div>
-            
+
             <div className="col-lg-3 col-md-6">
               <div className="card ttd-card h-100">
                 <div className="card-body text-center">
                   <i className="bi bi-gift service-icon"></i>
                   <h5 className="card-title">Donations</h5>
-                  <p className="card-text">Contribute to temple development and charitable activities</p>
-                  <a href="/services" className="btn btn-ttd btn-sm">Learn More</a>
+                  <p className="card-text">
+                    Contribute to temple development and charitable activities
+                  </p>
+                  <a href="/services" className="btn btn-ttd btn-sm">
+                    Learn More
+                  </a>
                 </div>
               </div>
             </div>
@@ -130,7 +158,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="row">
             <div className="col-lg-8 mx-auto">
               <div className="table-responsive">
@@ -188,40 +216,53 @@ const Home = () => {
             <div className="col-lg-12">
               <div className="text-center mb-5">
                 <h2 className="section-title">Latest Updates</h2>
-                <p className="text-muted">Stay informed about temple announcements</p>
+                <p className="text-muted">
+                  Stay informed about temple announcements
+                </p>
               </div>
             </div>
           </div>
-          
+
           <div className="row g-4">
             <div className="col-lg-4 col-md-6">
               <div className="card ttd-card h-100">
                 <div className="card-body">
                   <span className="badge bg-primary mb-2">Announcement</span>
                   <h6 className="card-title">Online Booking Now Available</h6>
-                  <p className="card-text small">Devotees can now book accommodation and sevas online through our portal.</p>
+                  <p className="card-text small">
+                    Devotees can now book accommodation and sevas online through
+                    our portal.
+                  </p>
                   <small className="text-muted">Posted 2 days ago</small>
                 </div>
               </div>
             </div>
-            
+
             <div className="col-lg-4 col-md-6">
               <div className="card ttd-card h-100">
                 <div className="card-body">
                   <span className="badge bg-success mb-2">Service Update</span>
-                  <h6 className="card-title">Special Arrangements for Festivals</h6>
-                  <p className="card-text small">Special darshan arrangements made for upcoming festival season.</p>
+                  <h6 className="card-title">
+                    Special Arrangements for Festivals
+                  </h6>
+                  <p className="card-text small">
+                    Special darshan arrangements made for upcoming festival
+                    season.
+                  </p>
                   <small className="text-muted">Posted 5 days ago</small>
                 </div>
               </div>
             </div>
-            
+
             <div className="col-lg-4 col-md-6">
               <div className="card ttd-card h-100">
                 <div className="card-body">
                   <span className="badge bg-warning mb-2">Maintenance</span>
                   <h6 className="card-title">Temple Renovation Schedule</h6>
-                  <p className="card-text small">Partial renovation work scheduled for next month with minimal disruption.</p>
+                  <p className="card-text small">
+                    Partial renovation work scheduled for next month with
+                    minimal disruption.
+                  </p>
                   <small className="text-muted">Posted 1 week ago</small>
                 </div>
               </div>
@@ -236,7 +277,10 @@ const Home = () => {
           <div className="row">
             <div className="col-lg-8 mx-auto text-center">
               <h2 className="mb-4">Plan Your Visit</h2>
-              <p className="mb-4">Experience the divine blessings of Lord Venkateswara. Book your visit today and immerse yourself in spiritual bliss.</p>
+              <p className="mb-4">
+                Experience the divine blessings of Lord Venkateswara. Book your
+                visit today and immerse yourself in spiritual bliss.
+              </p>
               <div className="d-flex justify-content-center gap-3">
                 <button className="btn btn-light btn-lg">
                   <i className="bi bi-calendar-plus me-2"></i>

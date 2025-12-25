@@ -59,10 +59,10 @@ const Navbar = () => {
             <div className="col-md-9">
               <div className="text-center text-md-end">
                 <h1 className="h4 mb-1 text-white">
-                 Sri valli sidhar peedam Thiruvannamalai Sri Venkateswara Temple
+                 Sri valli siddhar peedam trust
                 </h1>
                 <p className="mb-0 text-warning">
-                  ஶ்ரீ வள்ளி சித்தர் பீடம் திருவண்ணாமலை ஶ்ரீ வெங்கடேஸ்வரா திரு கோவில்
+                  ஶ்ரீ வள்ளி சித்தர் பீடம்
                 </p>
                 <p className="mb-0 small text-light">Thiruvannamalai</p>
               </div>
@@ -74,9 +74,9 @@ const Navbar = () => {
       {/* Navigation */}
       <nav className="navbar navbar-expand-lg ttd-navbar sticky-top">
         <div className="container">
-          <Link className="navbar-brand text-white d-lg-none" to="/">
+          {/* <Link className="navbar-brand text-white d-lg-none" to="/">
             TTD
-          </Link>
+          </Link> */}
 
           <button
             className="navbar-toggler"

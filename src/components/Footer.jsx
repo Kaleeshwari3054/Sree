@@ -1,28 +1,29 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'About Us', path: '/about' },
-    { name: 'Services', path: '/services' },
-    { name: 'Gallery', path: '/gallery' },
-    { name: 'Contact', path: '/contact' }
+    { name: "Home", path: "/" },
+    { name: "About Us", path: "/about" },
+    { name: "Services", path: "/services" },
+    { name: "Gallery", path: "/gallery" },
+    { name: "Contact", path: "/contact" },
   ];
 
   const services = [
-    'Arjitha Sevas',
-    'Daily Sevas',
-    'Weekly Sevas',
-    'Special Entry Darshan',
-    'Accommodation',
-    'Online Booking'
+    "Arjitha Sevas",
+    "Daily Sevas",
+    "Weekly Sevas",
+    "Special Entry Darshan",
+    "Accommodation",
+    "Online Booking",
   ];
 
   const contactInfo = {
-    address: 'Sri Venkateswara Swamy Temple, Thiruvannamalai, Tamil Nadu 606601',
-    phone: '+91-74187 03824',
+    address:
+      "Sri Venkateswara Swamy Temple, Thiruvannamalai, Tamil Nadu 606601",
+    phone: "+91-74187 03824",
     // email: 'info@ttd-thiruvannamalai.org',
     // website: 'www.ttd-thiruvannamalai.org'
   };
@@ -33,11 +34,12 @@ const Footer = () => {
         <div className="row">
           {/* About Section */}
           <div className="col-lg-4 col-md-6 mb-4">
-            <h5>About TTD</h5>
+            <h5>About Sri valli siddhar peedam trust</h5>
             <p className="text-light">
-              Tirumala Tirupati Devasthanams (TTD) is the independent trust which manages the 
-              Sri Venkateswara Swamy Temple at Thiruvannamalai. We are dedicated to preserving 
-              the temple's heritage and providing excellent services to devotees.
+              Sri Valli Siddhar Peedam Trust is the independent trust
+              which manages the Sri Venkateswara Swamy Temple at
+              Thiruvannamalai. We are dedicated to preserving the temple's
+              heritage and providing excellent services to devotees.
             </p>
             <div className="social-links mt-3">
               <a href="#" className="text-white me-3">
@@ -61,7 +63,10 @@ const Footer = () => {
             <ul>
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a href={link.path} className="text-light text-decoration-none">
+                  <a
+                    href={link.path}
+                    className="text-light text-decoration-none"
+                  >
                     {link.name}
                   </a>
                 </li>
@@ -75,7 +80,10 @@ const Footer = () => {
             <ul>
               {services.map((service, index) => (
                 <li key={index}>
-                  <a href="/services" className="text-light text-decoration-none">
+                  <a
+                    href="/services"
+                    className="text-light text-decoration-none"
+                  >
                     {service}
                   </a>
                 </li>
@@ -106,37 +114,46 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-
         {/* Map Section */}
-        <div className="row mt-4">
-          <div className="col-12">
-            <div className="map-container">
-              <h5 className="mb-3">Location</h5>
-              <div className="ratio ratio-16x9">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.789678048714!2d79.07473671479043!3d12.228273791395295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bacedf8b5f3b4b1%3A0x8b5b5b5b5b5b5b5b!2sThiruvannamalai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1635000000000!5m2!1sen!2sin"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  title="TTD Location Map"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div className="row mt-4">
+  <div className="col-12">
+    <div className="map-container">
+      <h5 className="mb-3">Location</h5>
+      <div className="google-map">
+        <iframe
+          title="Sri Valli Siddhar Peedam Trust Location"
+          src="https://www.google.com/maps?q=12.2388371,79.0932019+(Sri+Valli+Siddhar+Peedam+Trust)&z=18&output=embed"
+          width="100%"
+          height="100%"
+          style={{ border: 0, borderRadius: '10px' }}
+          allowFullScreen
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</div>
 
+       
         {/* Copyright */}
         <div className="row mt-4">
           <div className="col-12">
             <hr className="bg-light" />
             <div className="text-center">
               <p className="mb-0 small">
-                Copyright © {currentYear} Tirumala Tirupati Devasthanams (TTD), All Rights Reserved
+                Copyright © {currentYear} Sri valli siddhar peedam trust ,
+                All Rights Reserved
               </p>
               <p className="mb-0 small">
-                <a href="#" className="text-warning text-decoration-none me-3">Privacy Policy</a>
-                <a href="#" className="text-warning text-decoration-none me-3">Terms of Service</a>
-                <a href="#" className="text-warning text-decoration-none">Sitemap</a>
+                <a href="#" className="text-warning text-decoration-none me-3">
+                  Privacy Policy
+                </a>
+                <a href="#" className="text-warning text-decoration-none me-3">
+                  Terms of Service
+                </a>
+                <a href="#" className="text-warning text-decoration-none">
+                  Sitemap
+                </a>
               </p>
             </div>
           </div>

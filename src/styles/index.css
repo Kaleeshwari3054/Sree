@@ -2,6 +2,7 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 @import 'bootstrap-icons/font/bootstrap-icons.css';
 
+
 /* Custom TTD Website Styles */
 :root {
   --ttd-primary: #d4af37; /* Golden color */
@@ -235,6 +236,25 @@ body {
   .hero-subtitle {
     font-size: 1rem;
   }
+.btn-ttd {
+ margin-bottom: 30px;
+ 
+} 
+.ttd-footer {
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column ;
+  /* min-height: 60px; */
+  text-align: center; 
+}
+
+/* .ttd-footer h5 {
+  margin: 0 !important; 
+  text-align: center !important;
+}
+  */
+
 }
 
 /* Animation Classes */
@@ -556,4 +576,37 @@ body {
   .timeline-content {
     padding: 15px;
   }
+}
+
+.google-map {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  height: 350px;
+}
+
+.google-map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  filter: grayscale(10%);
+  transition: filter 0.3s ease;
+}
+
+.google-map:hover iframe {
+  filter: grayscale(0%);
+}
+
+/* Map overlay for better styling */
+.google-map::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(213,0,0,0.1), transparent);
+  pointer-events: none;
+  z-index: 1;
 }
