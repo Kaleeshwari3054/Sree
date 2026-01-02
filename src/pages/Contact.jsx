@@ -39,45 +39,45 @@ const Contact = () => {
     // emergency: '+91-74187 03824'
   };
 
-  const officeTimings = [
-    { day: "Monday - Saturday", time: "9:00 AM - 6:00 PM" },
-    { day: "Sunday", time: "9:00 AM - 1:00 PM" },
-    { day: "Temple Office", time: "24/7" },
-    { day: "Emergency Helpline", time: "24/7" },
-  ];
+  // const officeTimings = [
+  //   { day: "Monday - Saturday", time: "9:00 AM - 6:00 PM" },
+  //   { day: "Sunday", time: "9:00 AM - 1:00 PM" },
+  //   { day: "Temple Office", time: "24/7" },
+  //   { day: "Emergency Helpline", time: "24/7" },
+  // ];
 
-  const departments = [
-    {
-      name: "Executive Officer",
-      email: "eo@ttd-thiruvannamalai.org",
-      phone: "+91-XXXX-XXXXXX",
-    },
-    {
-      name: "Joint Executive Officer",
-      email: "jeo@ttd-thiruvannamalai.org",
-      phone: "+91-XXXX-XXXXXX",
-    },
-    {
-      name: "Finance Department",
-      email: "finance@ttd-thiruvannamalai.org",
-      phone: "+91-XXXX-XXXXXX",
-    },
-    {
-      name: "Public Relations",
-      email: "pr@ttd-thiruvannamalai.org",
-      phone: "+91-XXXX-XXXXXX",
-    },
-    {
-      name: "Pilgrim Amenities",
-      email: "amenities@ttd-thiruvannamalai.org",
-      phone: "+91-XXXX-XXXXXX",
-    },
-    {
-      name: "Donation Services",
-      email: "donations@ttd-thiruvannamalai.org",
-      phone: "+91-XXXX-XXXXXX",
-    },
-  ];
+  // const departments = [
+  //   {
+  //     name: "Executive Officer",
+  //     email: "eo@ttd-thiruvannamalai.org",
+  //     phone: "+91-XXXX-XXXXXX",
+  //   },
+  //   {
+  //     name: "Joint Executive Officer",
+  //     email: "jeo@ttd-thiruvannamalai.org",
+  //     phone: "+91-XXXX-XXXXXX",
+  //   },
+  //   {
+  //     name: "Finance Department",
+  //     email: "finance@ttd-thiruvannamalai.org",
+  //     phone: "+91-XXXX-XXXXXX",
+  //   },
+  //   {
+  //     name: "Public Relations",
+  //     email: "pr@ttd-thiruvannamalai.org",
+  //     phone: "+91-XXXX-XXXXXX",
+  //   },
+  //   {
+  //     name: "Pilgrim Amenities",
+  //     email: "amenities@ttd-thiruvannamalai.org",
+  //     phone: "+91-XXXX-XXXXXX",
+  //   },
+  //   {
+  //     name: "Donation Services",
+  //     email: "donations@ttd-thiruvannamalai.org",
+  //     phone: "+91-XXXX-XXXXXX",
+  //   },
+  // ];
 
   return (
     <div className="contact-page">
@@ -98,7 +98,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Information */}
-      <section className="py-5">
+      {/* <section className="py-5">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -109,9 +109,9 @@ const Contact = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <div className="row g-4">
+          {/* <div className="row g-4">
             <div className="col-lg-4">
               <div className="contact-info-card text-center">
                 <i className="bi bi-geo-alt fs-1 text-primary mb-3"></i>
@@ -126,9 +126,9 @@ const Contact = () => {
                 <h5>Phone</h5>
                 <p className="text-muted">
                   Office: {contactInfo.phone}
-                  <br />
+                  <br /> */}
                   {/* Emergency: {contactInfo.emergency} */}
-                </p>
+                {/* </p>
               </div>
             </div>
 
@@ -138,18 +138,24 @@ const Contact = () => {
                 <h5>Email</h5>
                 <p className="text-muted">
                   General: {contactInfo.email}
-                  <br />
+                  <br /> */}
                   {/* Website: {contactInfo.website} */}
-                </p>
+                {/* </p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Form & Map */}
       <section className="py-5 bg-light">
         <div className="container">
+          <div className="text-center mb-5">
+                <h2 className="section-title">Get in Touch</h2>
+                <p className="text-muted">
+                  We're here to help and answer any questions you might have
+                </p>
+              </div>
           <div className="row">
             <div className="col-lg-6">
               <div className="contact-form-card">
@@ -259,7 +265,7 @@ const Contact = () => {
                   ></iframe>
                 </div>
 
-                <div className="mt-4">
+                {/* <div className="mt-4">
                   <h5>Office Timings</h5>
                   <ul className="list-unstyled">
                     {officeTimings.map((timing, index) => (
@@ -268,7 +274,7 @@ const Contact = () => {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -276,7 +282,7 @@ const Contact = () => {
       </section>
 
       {/* Departments */}
-      <section className="py-5">
+      {/* <section className="py-5">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -321,10 +327,10 @@ const Contact = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
-      <section className="py-5 bg-light">
+      {/* <section className="py-5 bg-light">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -437,7 +443,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Social Media */}
       <section className="py-5">

@@ -9,7 +9,7 @@ const About = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="hero-content">
-                <h1 className="hero-title">About TTD</h1>
+                <h1 className="hero-title">About</h1>
                 <p className="hero-subtitle">
                   Preserving Tradition, Serving Devotees
                 </p>
@@ -69,7 +69,7 @@ const About = () => {
       </section>
 
       {/* Temple History */}
-      <section className="py-5 bg-light">
+      {/* <section className="py-5 bg-light">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -148,7 +148,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Vision and Mission */}
       <section className="py-5">
@@ -218,66 +218,112 @@ const About = () => {
         </div>
       </section>
 
-      {/* Management Board */}
-      <section className="py-5 bg-light">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <div className="text-center mb-5">
-                <h2 className="section-title">Leadership Team</h2>
-                <p className="text-muted">
-                  Dedicated individuals serving with devotion
-                </p>
-              </div>
-            </div>
-          </div>
+     <section className="py-5 bg-light">
+  <div className="container">
+    <div className="row">
+      <div className="col-lg-12">
+        <div className="text-center mb-5">
+          <h2 className="section-title">Committee Members</h2>
+          <p className="text-muted">
+            Dedicated members serving with devotion and responsibility
+          </p>
+        </div>
+      </div>
+    </div>
 
-          <div className="row g-4">
-            <div className="col-lg-3 col-md-6">
-              <div className="text-center">
-                <div className="team-member-avatar mb-3">
-                  <i className="bi bi-person-circle fs-1 text-primary"></i>
-                </div>
-                <h5>Chairman</h5>
-                <p className="text-muted small">Head of TTD Board</p>
-              </div>
-            </div>
+    <div className="row g-4">
 
-            <div className="col-lg-3 col-md-6">
-              <div className="text-center">
-                <div className="team-member-avatar mb-3">
-                  <i className="bi bi-person-circle fs-1 text-primary"></i>
-                </div>
-                <h5>Executive Officer</h5>
-                <p className="text-muted small">Chief Administrator</p>
-              </div>
-            </div>
-
-            <div className="col-lg-3 col-md-6">
-              <div className="text-center">
-                <div className="team-member-avatar mb-3">
-                  <i className="bi bi-person-circle fs-1 text-primary"></i>
-                </div>
-                <h5>Joint EO</h5>
-                <p className="text-muted small">Operations Head</p>
-              </div>
-            </div>
-
-            <div className="col-lg-3 col-md-6">
-              <div className="text-center">
-                <div className="team-member-avatar mb-3">
-                  <i className="bi bi-person-circle fs-1 text-primary"></i>
-                </div>
-                <h5>Financial Advisor</h5>
-                <p className="text-muted small">Finance Controller</p>
-              </div>
-            </div>
+      {/* President */}
+      <div className="col-lg-3 col-md-6">
+        <div className="card text-center h-100 shadow-sm">
+          <div className="card-body">
+            <i className="bi bi-person-circle fs-1 text-primary mb-3"></i>
+            <h5 className="card-title">S. Valli</h5>
+            <p className="text-muted small mb-1">President & Founder</p>
           </div>
         </div>
-      </section>
+      </div>
+
+      {/* Secretary */}
+      <div className="col-lg-3 col-md-6">
+        <div className="card text-center h-100 shadow-sm">
+          <div className="card-body">
+            <i className="bi bi-person-circle fs-1 text-primary mb-3"></i>
+            <h5 className="card-title">S. Rema Sushmitha</h5>
+            <p className="text-muted small mb-1">Secretary (Advocate)</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Treasurer */}
+      <div className="col-lg-3 col-md-6">
+        <div className="card text-center h-100 shadow-sm">
+          <div className="card-body">
+            <i className="bi bi-person-circle fs-1 text-primary mb-3"></i>
+            <h5 className="card-title">S. Pooja Sri</h5>
+            <p className="text-muted small mb-1">Treasurer</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Committee Member */}
+      <div className="col-lg-3 col-md-6">
+        <div className="card text-center h-100 shadow-sm">
+          <div className="card-body">
+            <i className="bi bi-person-circle fs-1 text-primary mb-3"></i>
+            <h5 className="card-title">A. Sathish</h5>
+            <p className="text-muted small mb-1">Administrative Officer</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Repeat Members */}
+      <div className="col-lg-3 col-md-6">
+        <div className="card text-center h-100 shadow-sm">
+          <div className="card-body">
+            <i className="bi bi-person-circle fs-1 text-primary mb-3"></i>
+            <h5 className="card-title">P. Athish</h5>
+            <p className="text-muted small mb-1">Supervisor</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="col-lg-3 col-md-6">
+        <div className="card text-center h-100 shadow-sm">
+          <div className="card-body">
+            <i className="bi bi-person-circle fs-1 text-primary mb-3"></i>
+            <h5 className="card-title">S. Kavin Keerthan</h5>
+            <p className="text-muted small mb-1">Administrative Supervisor</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="col-lg-3 col-md-6">
+        <div className="card text-center h-100 shadow-sm">
+          <div className="card-body">
+            <i className="bi bi-person-circle fs-1 text-primary mb-3"></i>
+            <h5 className="card-title">P. Shalini</h5>
+            <p className="text-muted small mb-1">Supervisor</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="col-lg-3 col-md-6">
+        <div className="card text-center h-100 shadow-sm">
+          <div className="card-body">
+            <i className="bi bi-person-circle fs-1 text-primary mb-3"></i>
+            <h5 className="card-title">A. Ramanadhan</h5>
+            <p className="text-muted small mb-1">Priest</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* Achievements */}
-      <section className="py-5">
+      {/* <section className="py-5">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -331,7 +377,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

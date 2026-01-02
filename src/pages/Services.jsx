@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Services: React.FC = () => {
+const Services = () => {
   const [activeTab, setActiveTab] = useState('sevas');
 
   const services = {

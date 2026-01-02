@@ -17,14 +17,14 @@ const Home = () => {
                 </p>
                 <div className="hero-buttons">
                   <button
-                    className="btn btn-ttd btn-lg me-3"
+                    className="btn btn-ttdd btn-lg me-3"
                     onClick={() => (window.location.href = "/donate")} // Donation page link
                   >
                     <i className="bi bi-wallet2 me-2"></i>
                     Donate Now
                   </button>
 
-                  <button className="btn btn-ttd-outline btn-lg">
+                  <button className="btn btn-ttd-outlines btn-lg">
                     <i className="bi bi-play-circle me-2"></i>
                     Virtual Tour
                   </button>
@@ -148,7 +148,7 @@ const Home = () => {
       </section>
 
       {/* Daily Schedule */}
-      <section className="py-5 bg-light">
+      {/* <section className="py-5 bg-light">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -207,7 +207,57 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+ <div className="row">
+            <div className="col-lg-12">
+              <div className="text-center mb-5">
+                <h2 className="section-title">Daily Schedule</h2>
+                <p className="text-muted">Temple timings and rituals</p>
+              </div>
+            </div>
+          </div>
+      <div className="row">
+        <div className="col-lg-8 mx-auto">
+          <div className="table-responsive">
+            <table className="table table-hover">
+              <thead className="table-dark">
+                <tr>
+                  <th>Time</th>
+                  <th>Ritual</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>06:00 - 06:30</td>
+                  <td>Suprabhatam</td>
+                  <td>Morning awakening ceremony</td>
+                </tr>
+                <tr>
+                  <td>06:30 - 07:00</td>
+                  <td>Thomala Seva</td>
+                  <td>Floral decoration ceremony</td>
+                </tr>
+                <tr>
+                  <td>07:00 - 08:00</td>
+                  <td>First Archana</td>
+                  <td>Sahasranama Archana</td>
+                </tr>
+                <tr>
+                  <td>08:00 - 20:00</td>
+                  <td>Darshanam</td>
+                  <td>General darshan for devotees</td>
+                </tr>
+                <tr>
+                  <td>19:30 - 20:00</td>
+                  <td>Sahasra Deepalankarana</td>
+                  <td>Lighting of 1000 lamps</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
 
       {/* Latest Updates */}
       <section className="py-5">
