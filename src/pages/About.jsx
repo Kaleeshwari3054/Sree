@@ -1,5 +1,5 @@
 import React from "react";
-
+import srivalli from "../assets/gallery/ritual1.jpeg";
 const About = () => {
   return (
     <div className="about-page">
@@ -20,7 +20,7 @@ const About = () => {
       </section>
 
       {/* About TTD */}
-      <section className="py-5">
+      {/* <section className="py-5">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
@@ -62,6 +62,78 @@ const About = () => {
                       "https://picsum.photos/seed/ttd-temple/600/400.jpg";
                   }}
                 />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
+
+      <section className="py-5 bg-light overflow-hidden">
+        <div className="container">
+          <div className="row align-items-center g-5">
+            <div className="col-lg-6 order-lg-1">
+              <h2 className="section-title  display-5 fw-bold">
+                Sri Valli Siddhar Peedam Trust
+              </h2>
+              <p className="lead fs-5 text-muted mb-4">
+                Sri Valli Siddhar Peedam Trust is a divine spiritual
+                organization located at Vellore, Tamil Nadu, dedicated to the
+                worship and propagation of Siddhar traditions and Valli Amman
+                devotion.
+              </p>
+              <div className="row g-3 mb-4">
+                <div className="col-12">
+                  <div className="d-flex align-items-center">
+                    <i className="bi bi-geo-alt-fill text-warning me-3 fs-3"></i>
+                    <div>
+                      <h6 className="fw-bold mb-1">Location</h6>
+                      <small className="text-muted">
+                        Arcot - Vellore Road, Melpadi Village, Vellore, Tamil
+                        Nadu 632509
+                        <br />
+                        <a
+                          href="https://maps.app.goo.gl/TeMsJqHdvVCH6xNB9"
+                          target="_blank"
+                          className="text-decoration-none"
+                        >
+                          View on Google Maps →
+                        </a>
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p className="mb-4">
+                Established to preserve ancient Siddhar wisdom and serve
+                devotees through spiritual practices, charitable activities, and
+                community welfare programs. The trust maintains the sacred
+                Peedam and conducts regular poojas, festivals, and spiritual
+                discourses.
+              </p>
+              <p>
+                Committed to spiritual enlightenment, social service, and
+                cultural preservation, Sri Valli Siddhar Peedam Trust continues
+                to inspire thousands of devotees seeking divine grace and inner
+                peace.
+              </p>
+            </div>
+            <div className="col-lg-6 order-lg-2">
+              <div className="about-image position-relative overflow-hidden rounded-4 shadow-lg">
+                <img
+                  src={srivalli}
+                  alt="Sri Valli Siddhar Peedam"
+                  className="img-fluid w-100 h-100 object-fit-cover"
+                  style={{ height: "400px" }}
+                  // onError={(e) => {
+                  //   const target = e.target;
+                  //   target.src =
+                  //     "https://picsum.photos/seed/sri-valli-siddhar/600/400?random=1";
+                  // }}
+                />
+                <div className="position-absolute bottom-0 start-0 w-100 bg-gradient text-white p-4">
+                  <h5 className="fw-bold mb-0">Diviness Abode of Grace</h5>
+                  <small>Sri Valli Siddhar Peedam, Vellore</small>
+                </div>
               </div>
             </div>
           </div>
@@ -218,109 +290,111 @@ const About = () => {
         </div>
       </section>
 
-     <section className="py-5 bg-light">
-  <div className="container">
-    <div className="row">
-      <div className="col-lg-12">
-        <div className="text-center mb-5">
-          <h2 className="section-title">Committee Members</h2>
-          <p className="text-muted">
-            Dedicated members serving with devotion and responsibility
-          </p>
-        </div>
-      </div>
-    </div>
+      <section className="py-5 bg-light">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="text-center mb-5">
+                <h2 className="section-title">Committee Members</h2>
+                <p className="text-muted">
+                  Dedicated members serving with devotion and responsibility
+                </p>
+              </div>
+            </div>
+          </div>
 
-    <div className="row g-4">
+          <div className="row g-4">
+            {/* President */}
+            <div className="col-lg-3 col-md-6">
+              <div className="card text-center h-100 shadow-sm">
+                <div className="card-body">
+                  <i className="bi bi-person-circle fs-1 text-primary mb-3"></i>
+                  <h5 className="card-title">S. Valli</h5>
+                  <p className="text-muted small mb-1">President & Founder</p>
+                </div>
+              </div>
+            </div>
 
-      {/* President */}
-      <div className="col-lg-3 col-md-6">
-        <div className="card text-center h-100 shadow-sm">
-          <div className="card-body">
-            <i className="bi bi-person-circle fs-1 text-primary mb-3"></i>
-            <h5 className="card-title">S. Valli</h5>
-            <p className="text-muted small mb-1">President & Founder</p>
+            {/* Secretary */}
+            <div className="col-lg-3 col-md-6">
+              <div className="card text-center h-100 shadow-sm">
+                <div className="card-body">
+                  <i className="bi bi-person-circle fs-1 text-primary mb-3"></i>
+                  <h5 className="card-title">S. Rema Sushmitha</h5>
+                  <p className="text-muted small mb-1">Secretary (Advocate)</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Treasurer */}
+            <div className="col-lg-3 col-md-6">
+              <div className="card text-center h-100 shadow-sm">
+                <div className="card-body">
+                  <i className="bi bi-person-circle fs-1 text-primary mb-3"></i>
+                  <h5 className="card-title">S. Pooja Sri</h5>
+                  <p className="text-muted small mb-1">Treasurer</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Committee Member */}
+            <div className="col-lg-3 col-md-6">
+              <div className="card text-center h-100 shadow-sm">
+                <div className="card-body">
+                  <i className="bi bi-person-circle fs-1 text-primary mb-3"></i>
+                  <h5 className="card-title">A. Sathish</h5>
+                  <p className="text-muted small mb-1">
+                    Administrative Officer
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Repeat Members */}
+            <div className="col-lg-3 col-md-6">
+              <div className="card text-center h-100 shadow-sm">
+                <div className="card-body">
+                  <i className="bi bi-person-circle fs-1 text-primary mb-3"></i>
+                  <h5 className="card-title">P. Athish</h5>
+                  <p className="text-muted small mb-1">Supervisor</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-3 col-md-6">
+              <div className="card text-center h-100 shadow-sm">
+                <div className="card-body">
+                  <i className="bi bi-person-circle fs-1 text-primary mb-3"></i>
+                  <h5 className="card-title">S. Kavin Keerthan</h5>
+                  <p className="text-muted small mb-1">
+                    Administrative Supervisor
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-3 col-md-6">
+              <div className="card text-center h-100 shadow-sm">
+                <div className="card-body">
+                  <i className="bi bi-person-circle fs-1 text-primary mb-3"></i>
+                  <h5 className="card-title">P. Shalini</h5>
+                  <p className="text-muted small mb-1">Supervisor</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-3 col-md-6">
+              <div className="card text-center h-100 shadow-sm">
+                <div className="card-body">
+                  <i className="bi bi-person-circle fs-1 text-primary mb-3"></i>
+                  <h5 className="card-title">A. Ramanadhan</h5>
+                  <p className="text-muted small mb-1">Priest</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      {/* Secretary */}
-      <div className="col-lg-3 col-md-6">
-        <div className="card text-center h-100 shadow-sm">
-          <div className="card-body">
-            <i className="bi bi-person-circle fs-1 text-primary mb-3"></i>
-            <h5 className="card-title">S. Rema Sushmitha</h5>
-            <p className="text-muted small mb-1">Secretary (Advocate)</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Treasurer */}
-      <div className="col-lg-3 col-md-6">
-        <div className="card text-center h-100 shadow-sm">
-          <div className="card-body">
-            <i className="bi bi-person-circle fs-1 text-primary mb-3"></i>
-            <h5 className="card-title">S. Pooja Sri</h5>
-            <p className="text-muted small mb-1">Treasurer</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Committee Member */}
-      <div className="col-lg-3 col-md-6">
-        <div className="card text-center h-100 shadow-sm">
-          <div className="card-body">
-            <i className="bi bi-person-circle fs-1 text-primary mb-3"></i>
-            <h5 className="card-title">A. Sathish</h5>
-            <p className="text-muted small mb-1">Administrative Officer</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Repeat Members */}
-      <div className="col-lg-3 col-md-6">
-        <div className="card text-center h-100 shadow-sm">
-          <div className="card-body">
-            <i className="bi bi-person-circle fs-1 text-primary mb-3"></i>
-            <h5 className="card-title">P. Athish</h5>
-            <p className="text-muted small mb-1">Supervisor</p>
-          </div>
-        </div>
-      </div>
-
-      <div className="col-lg-3 col-md-6">
-        <div className="card text-center h-100 shadow-sm">
-          <div className="card-body">
-            <i className="bi bi-person-circle fs-1 text-primary mb-3"></i>
-            <h5 className="card-title">S. Kavin Keerthan</h5>
-            <p className="text-muted small mb-1">Administrative Supervisor</p>
-          </div>
-        </div>
-      </div>
-
-      <div className="col-lg-3 col-md-6">
-        <div className="card text-center h-100 shadow-sm">
-          <div className="card-body">
-            <i className="bi bi-person-circle fs-1 text-primary mb-3"></i>
-            <h5 className="card-title">P. Shalini</h5>
-            <p className="text-muted small mb-1">Supervisor</p>
-          </div>
-        </div>
-      </div>
-
-      <div className="col-lg-3 col-md-6">
-        <div className="card text-center h-100 shadow-sm">
-          <div className="card-body">
-            <i className="bi bi-person-circle fs-1 text-primary mb-3"></i>
-            <h5 className="card-title">A. Ramanadhan</h5>
-            <p className="text-muted small mb-1">Priest</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* Achievements */}
       {/* <section className="py-5">
