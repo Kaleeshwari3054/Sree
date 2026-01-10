@@ -171,6 +171,7 @@ const Contact = () => {
                         className="form-control"
                         id="name"
                         name="name"
+                        placeholder="Enter your name"
                         value={formData.name}
                         onChange={handleChange}
                         required
@@ -185,6 +186,7 @@ const Contact = () => {
                         className="form-control"
                         id="email"
                         name="email"
+                         placeholder="Enter your email"
                         value={formData.email}
                         onChange={handleChange}
                         required
@@ -202,18 +204,20 @@ const Contact = () => {
                         className="form-control"
                         id="phone"
                         name="phone"
+                         placeholder="Enter your phone number"
                         value={formData.phone}
                         onChange={handleChange}
                       />
                     </div>
                     <div className="col-md-6 mb-3">
-                      <label htmlFor="subject" className="form-label">
+                      <label htmlFor="subject" className="form-label" >
                         Subject *
                       </label>
                       <select
                         className="form-select"
                         id="subject"
                         name="subject"
+                     
                         value={formData.subject}
                         onChange={handleChange}
                         required
@@ -236,6 +240,7 @@ const Contact = () => {
                       className="form-control"
                       id="message"
                       name="message"
+                        placeholder="Enter your message"
                       rows={5}
                       value={formData.message}
                       onChange={handleChange}
@@ -253,7 +258,7 @@ const Contact = () => {
             <div className="col-lg-6">
               <div className="map-card">
                 <h4 className="mb-4">Location</h4>
-                <div className="ratio ratio-16x9">
+                {/* <div className="ratio ratio-16x9">
                   <iframe
                     title="Sri Valli Siddhar Peedam Trust Location"
                     src="https://www.google.com/maps?q=12.2388371,79.0932019+(Sri+Valli+Siddhar+Peedam+Trust)&z=18&output=embed"
@@ -263,7 +268,40 @@ const Contact = () => {
                     allowFullScreen
                     loading="lazy"
                   ></iframe>
-                </div>
+                </div> */}
+
+
+
+<div className="location-section mb-5">
+  {/* RED PIN + NAME BESIDE - EXACT MATCH */}
+  <div className="location-header mb-4">
+    <div className="d-flex align-items-center gap-3">
+      
+      
+      {/* TEMPLE NAME */}
+      <div className="flex-grow-1">
+        <h4 className="mb-1 fw-bold text-dark lh-1">Sri valli siddhar peedam trust</h4>
+        <div className="tamil-title fs-6 text-primary fw-semibold lh-1">
+          ஸ்ரீ வள்ளி சித்தர் பீடம் அறக்கட்டளை
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* GOOGLE MAPS - RED PIN WITH NAME */}
+  <div className="ratio ratio-16x9 shadow-lg rounded-4 border-0 overflow-hidden">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4867742999997!2d79.0932019!3d12.2388371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bacc0b9369508af%3A0xffb43b1aa080331d!2sSri%20Valli%20Siddhar%20Peedam%20Trust!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+      width="100%"
+      height="100%"
+      style={{border: 0}}
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      title="Sri Valli Siddhar Peedam Trust Location"
+    />
+  </div>
+</div>
 
                 {/* <div className="mt-4">
                   <h5>Office Timings</h5>

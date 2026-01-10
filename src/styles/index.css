@@ -865,3 +865,34 @@ body {
 
 
 
+
+
+
+.location-section {
+  max-width: 900px;
+  margin: 0 auto 3rem auto;
+}
+
+.location-pin {
+  flex-shrink: 0;
+  box-shadow: 0 8px 25px rgba(220, 53, 69, 0.4);
+  animation: pinPulse 2s infinite;
+}
+
+@keyframes pinPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.tamil-title {
+  font-family: 'Noto Sans Tamil', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.2;
+}
+
+.location-header {
+  background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border-left: 5px solid #dc3545;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}

@@ -1,6 +1,12 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate = useNavigate();
+
+const handleBookNow = () => {
+  navigate("/booking");
+};
   return (
     <div className="home-page">
       {/* Hero Section */}
@@ -10,7 +16,7 @@ const Home = () => {
             <div className="col-lg-12">
               <div className="hero-content fade-in">
                 <h1 className="hero-title">
-                  Welcome to Sri valli sidhar peedam
+                  Welcome to Sri valli siddhar peedam trust
                 </h1>
                 <p className="hero-subtitle">
                   Thiruvannamalai - The Abode of Divine Grace
@@ -29,38 +35,6 @@ const Home = () => {
                     Virtual Tour
                   </button>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Quick Stats */}
-      <section className="py-4 bg-light">
-        <div className="container">
-          <div className="row text-center">
-            <div className="col-md-3 col-6 mb-3">
-              <div className="stat-item">
-                <h3 className="text-primary">50,000+</h3>
-                <p className="mb-0">Daily Devotees</p>
-              </div>
-            </div>
-            <div className="col-md-3 col-6 mb-3">
-              <div className="stat-item">
-                <h3 className="text-primary">1000+</h3>
-                <p className="mb-0">Years of History</p>
-              </div>
-            </div>
-            <div className="col-md-3 col-6 mb-3">
-              <div className="stat-item">
-                <h3 className="text-primary">24/7</h3>
-                <p className="mb-0">Temple Services</p>
-              </div>
-            </div>
-            <div className="col-md-3 col-6 mb-3">
-              <div className="stat-item">
-                <h3 className="text-primary">500+</h3>
-                <p className="mb-0">Rooms Available</p>
               </div>
             </div>
           </div>
@@ -147,76 +121,105 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Daily Schedule */}
-      {/* <section className="py-5 bg-light">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <div className="text-center mb-5">
-                <h2 className="section-title">Daily Schedule</h2>
-                <p className="text-muted">Temple timings and rituals</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="row">
-            <div className="col-lg-8 mx-auto">
-              <div className="table-responsive">
-                <table className="table table-hover">
-                  <thead className="table-dark">
-                    <tr>
-                      <th>Time</th>
-                      <th>Ritual</th>
-                      <th>Description</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>02:30 - 03:00</td>
-                      <td>Suprabhatam</td>
-                      <td>Morning awakening ceremony</td>
-                    </tr>
-                    <tr>
-                      <td>03:30 - 04:00</td>
-                      <td>Thomala Seva</td>
-                      <td>Floral decoration ceremony</td>
-                    </tr>
-                    <tr>
-                      <td>04:15 - 05:00</td>
-                      <td>First Archana</td>
-                      <td>Sahasranama Archana</td>
-                    </tr>
-                    <tr>
-                      <td>08:00 - 19:00</td>
-                      <td>Darshanam</td>
-                      <td>General darshan for devotees</td>
-                    </tr>
-                    <tr>
-                      <td>17:30 - 18:30</td>
-                      <td>Sahasra Deepalankarana</td>
-                      <td>Lighting of 1000 lamps</td>
-                    </tr>
-                    <tr>
-                      <td>21:00 - 01:00</td>
-                      <td>Night Darshan</td>
-                      <td>Evening darshan session</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
+      <div className="row">
+        <div className="col-lg-12">
+          <div className="text-center mb-5">
+            <h2 className="section-title">Daily Schedule</h2>
+            <p className="text-muted">Temple timings and rituals</p>
           </div>
         </div>
-      </section> */}
- <div className="row">
-            <div className="col-lg-12">
-              <div className="text-center mb-5">
-                <h2 className="section-title">Daily Schedule</h2>
-                <p className="text-muted">Temple timings and rituals</p>
-              </div>
-            </div>
-          </div>
+      </div>
+
       <div className="row">
+        <div className="col-lg-8 mx-auto">
+          {/* Weekly Evening Darshan Schedule */}
+          <div className="table-responsive mb-4">
+            <h5 className="text-center mb-3">
+              Daily Darshan (6:00 PM - 10:00 PM)
+            </h5>
+            <table className="table table-hover table-bordered">
+              <thead className="table-primary">
+                <tr>
+                  <th>Day</th>
+                  <th>Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sunday</td>
+                  <td>6:00 PM - 10:00 PM</td>
+                </tr>
+                <tr>
+                  <td>Monday</td>
+                  <td>6:00 PM - 10:00 PM</td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>6:00 PM - 10:00 PM</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>6:00 PM - 10:00 PM</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>6:00 PM - 10:00 PM</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>6:00 PM - 10:00 PM</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>6:00 PM - 10:00 PM</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          {/* Morning Rituals Schedule */}
+          {/* <div className="table-responsive">
+          <h5 className="text-center mb-3">Morning Rituals</h5>
+          <table className="table table-hover table-bordered">
+            <thead className="table-dark">
+              <tr>
+                <th>Time</th>
+                <th>Ritual</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>06:00 - 06:30</td>
+                <td>Suprabhatam</td>
+                <td>Morning awakening ceremony</td>
+              </tr>
+              <tr>
+                <td>06:30 - 07:00</td>
+                <td>Thomala Seva</td>
+                <td>Floral decoration ceremony</td>
+              </tr>
+              <tr>
+                <td>07:00 - 08:00</td>
+                <td>First Archana</td>
+                <td>Sahasranama Archana</td>
+              </tr>
+              <tr>
+                <td>08:00 - 20:00</td>
+                <td>Darshanam</td>
+                <td>General darshan for devotees</td>
+              </tr>
+              <tr>
+                <td>19:30 - 20:00</td>
+                <td>Sahasra Deepalankarana</td>
+                <td>Lighting of 1000 lamps</td>
+              </tr>
+            </tbody>
+          </table>
+        </div> */}
+        </div>
+      </div>
+      {/* <div className="row">
         <div className="col-lg-8 mx-auto">
           <div className="table-responsive">
             <table className="table table-hover">
@@ -257,7 +260,7 @@ const Home = () => {
             </table>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Latest Updates */}
       <section className="py-5">
@@ -332,9 +335,17 @@ const Home = () => {
                 visit today and immerse yourself in spiritual bliss.
               </p>
               <div className="d-flex justify-content-center gap-3">
-                <button className="btn btn-light btn-lg">
+                {/* <button className="btn btn-light btn-lg">
                   <i className="bi bi-calendar-plus me-2"></i>
-                  Book Now
+                  Continue
+                </button> */}
+
+                <button
+                  className="btn btn-light btn-lg"
+                  // onClick={handleBookNow}
+                >
+                  <i className="bi bi-calendar-plus me-2"></i>
+                 Continue
                 </button>
                 <button className="btn btn-outline-light btn-lg">
                   <i className="bi bi-info-circle me-2"></i>

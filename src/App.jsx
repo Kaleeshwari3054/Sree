@@ -10,6 +10,7 @@ import Contact from './pages/Contact';
 import './styles/index.css';
 import ScrollToTop from './pages/ScrollToTop';
 import DonationPage from './pages/DonationPage';
+import BookingPage from './pages/BookingPage';
 
 const App= () => {
   return (
@@ -25,6 +26,8 @@ const App= () => {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/donate" element={<DonationPage />} />
+             <Route path="/booking" element={<BookingPage />} />
+             <Route path="/booking/:date" element={<BookingPage />} />
           </Routes>
         </main>
         <Footer />

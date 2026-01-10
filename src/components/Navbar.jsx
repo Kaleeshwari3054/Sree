@@ -62,7 +62,7 @@ const Navbar = () => {
                  Sri valli siddhar peedam trust
                 </h1>
                 <p className="mb-0 text-warning">
-                  ஶ்ரீ வள்ளி சித்தர் பீடம்
+                 ஸ்ரீ வள்ளி சித்தர் பீடம் அறக்கட்டளை
                 </p>
                 <p className="mb-0 small text-light">Thiruvannamalai</p>
               </div>

@@ -22,7 +22,7 @@ const Footer = () => {
 
   const contactInfo = {
     address:
-      "Sri Venkateswara Swamy Temple, Thiruvannamalai, Tamil Nadu 606601",
+      "79/12 Perumal Kovil Street,  So. Kilnachipattu Village, Thiruvannamalai to Chennai Main Road, Thiruvannamalai-606601",
     phone: "+91-74187 03824",
     // email: 'info@ttd-thiruvannamalai.org',
     // website: 'www.ttd-thiruvannamalai.org'
@@ -36,10 +36,10 @@ const Footer = () => {
           <div className="col-lg-4 col-md-6 mb-4">
             <h5>About Sri valli siddhar peedam trust</h5>
             <p className="text-light">
-              Sri Valli Siddhar Peedam Trust is the independent trust
-              which manages the Sri Venkateswara Swamy Temple at
-              Thiruvannamalai. We are dedicated to preserving the temple's
-              heritage and providing excellent services to devotees.
+              Sri Valli Siddhar Peedam Trust is the independent trust which
+              manages the Sri Venkateswara Swamy Temple at Thiruvannamalai. We
+              are dedicated to preserving the temple's heritage and providing
+              excellent services to devotees.
             </p>
             <div className="social-links mt-3">
               <a href="#" className="text-white me-3">
@@ -115,34 +115,46 @@ const Footer = () => {
           </div>
         </div>
         {/* Map Section */}
-    <div className="row mt-4">
-  <div className="col-12">
-    <div className="map-container">
-      <h5 className="mb-3">Location</h5>
-      <div className="google-map">
-        <iframe
-          title="Sri Valli Siddhar Peedam Trust Location"
-          src="https://www.google.com/maps?q=12.2388371,79.0932019+(Sri+Valli+Siddhar+Peedam+Trust)&z=18&output=embed"
-          width="100%"
-          height="100%"
-          style={{ border: 0, borderRadius: '10px' }}
-          allowFullScreen
-          loading="lazy"
-        ></iframe>
-      </div>
-    </div>
-  </div>
-</div>
+        <div className="row mt-4">
+          <div className="col-12">
+            <div className="map-container">
+              <h5 className="mb-3">Location</h5>
+              {/* <div className="google-map">
+                <iframe
+                  title="Sri Valli Siddhar Peedam Trust Location"
+                  src="https://www.google.com/maps?q=12.2388371,79.0932019+(Sri+Valli+Siddhar+Peedam+Trust)&z=18&output=embed"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0, borderRadius: "10px" }}
+                  allowFullScreen
+                  loading="lazy"
+                ></iframe>
+              </div> */}
 
-       
+              <div className="ratio ratio-16x9 shadow-lg rounded-4 border-0 overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4867742999997!2d79.0932019!3d12.2388371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bacc0b9369508af%3A0xffb43b1aa080331d!2sSri%20Valli%20Siddhar%20Peedam%20Trust!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Sri Valli Siddhar Peedam Trust Location"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Copyright */}
         <div className="row mt-4">
           <div className="col-12">
             <hr className="bg-light" />
             <div className="text-center">
               <p className="mb-0 small">
-                Copyright © {currentYear} Sri valli siddhar peedam trust ,
-                All Rights Reserved
+                Copyright © {currentYear} Sri valli siddhar peedam trust , All
+                Rights Reserved
               </p>
               <p className="mb-0 small">
                 <a href="#" className="text-warning text-decoration-none me-3">
